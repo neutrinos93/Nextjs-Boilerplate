@@ -28,7 +28,7 @@ export default async function Page(props: {
   const searchParams = await props.searchParams;
   const query = searchParams?.query || ''; console.log(query);
   const currentPage = Number(searchParams?.page) || 1;
-  const totalPages = await fetchInvoicesPages(query); console.log("Total pages", totalPages);
+  const totalPages = await fetchInvoicesPages(query); //console.log("Total pages", totalPages);
  
   return (
     <div className="w-full">
